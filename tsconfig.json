@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "strict": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "outDir": "./dist",
+    "rootDir": ".",
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "types": ["node"]
+  },
+  "include": [
+    "step-definitions/**/*.ts",
+    "support/**/*.ts",
+    "features/**/*.ts"
+  ],
+  "exclude": ["node_modules", "dist"]
+}
