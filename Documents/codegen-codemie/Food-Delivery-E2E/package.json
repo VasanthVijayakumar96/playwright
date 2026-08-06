@@ -1,0 +1,26 @@
+{
+  "name": "food-delivery-e2e",
+  "version": "1.0.0",
+  "description": "Cucumber BDD + Playwright TypeScript E2E test suite for the Food Delivery app",
+  "private": true,
+  "scripts": {
+    "test": "cucumber-js",
+    "test:smoke": "cucumber-js --tags @smoke",
+    "test:auth": "cucumber-js --tags @auth",
+    "test:nav": "cucumber-js --tags @nav",
+    "test:api": "cucumber-js --tags @api",
+    "test:security": "cucumber-js --tags @security",
+    "test:headed": "cross-env HEADLESS=false cucumber-js",
+    "install:browsers": "playwright install chromium"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.8.0",
+    "@playwright/test": "^1.44.1",
+    "@types/node": "^20.14.2",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5",
+    "playwright": "^1.44.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
